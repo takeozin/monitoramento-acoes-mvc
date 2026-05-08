@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^25.6.2",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vite": "^8.0.11"
   }
 }

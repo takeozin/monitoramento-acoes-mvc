@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoramento de Ações | MVC</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="background-decorations">
+      <div class="blob shape-1"></div>
+      <div class="blob shape-2"></div>
+    </div>
+    
+    <main class="app-container glass-panel">
+      <header>
+        <h1>Mercado Financeiro</h1>
+        <p>Monitoramento em Tempo Real</p>
+      </header>
+
+      <section class="stock-card" id="stock-card">
+        <div class="stock-header">
+          <span class="stock-ticker" id="ticker-display">--</span>
+          <span class="stock-status" id="status-indicator">Ativo</span>
+        </div>
+        
+        <div class="price-container">
+          <span class="currency">R$</span>
+          <h2 class="stock-price" id="price-display">0.00</h2>
+        </div>
+
+        <div class="price-change">
+          <svg id="trend-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          <span id="change-display">Aguardando atualização</span>
+        </div>
+      </section>
+
+      <section class="controls-container">
+        <h3>Simular Variação</h3>
+        <div class="button-group">
+          <button id="btn-decrease" class="btn btn-danger">
+            - R$ 0.50
+          </button>
+          <button id="btn-increase" class="btn btn-success">
+            + R$ 0.50
+          </button>
+        </div>
+        <p class="error-msg" id="error-message"></p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
